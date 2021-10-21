@@ -31,11 +31,21 @@ for (let i = 0; i < addElement.length; i++){
 */
 //D najst a zmazat element
 const removElement = document.querySelector('#sme-corpbar');
-console.log(removElement)
+console.log(removElement);
 removElement.remove(removElement);
-console.log(removElement)
+console.log(removElement);
 
 //E najst a zmenit obsah elementu
+
+var para = document.createElement('p');
+
+console.log(para);
+var t = document.createTextNode('This is a paragraph for execrise.');
+//console.log(t)
+
+para.appendChild(t);
+document.getElementById('js-body-wrapper').appendChild(t);
+
 /*
 const changeElem = document.querySelector('.px-m-sm my-m');
 console.log(changeElem);
@@ -44,5 +54,9 @@ changeElem.textContent = 'New item with text';
 changeElem.parentNode.removeChild(changeElem);
 */
 //E1 nastavit/zmazat/vycitat CSS class tzn. napr. ma dany element css class s danym nazvom?
+
 // ...ak ano, zmaz ho alebo zmen na iny css class
+
+
+
 //E2 to iste ako E1 ale s CSS style
